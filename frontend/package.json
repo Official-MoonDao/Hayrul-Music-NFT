@@ -1,0 +1,23 @@
+{
+    "name": "Hayrul-Music-NFT",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+    },
+    "scripts": {
+      "s3": "aws s3 cp ./ s3://hayrul.moondao.link --recursive"
+    },
+    "browserslist": {
+      "production": [
+        ">0.2%",
+        "not dead",
+        "not op_mini all"
+      ],
+      "development": [
+        "last 1 chrome version",
+        "last 1 firefox version",
+        "last 1 safari version"
+      ]
+    }
+  }
+  

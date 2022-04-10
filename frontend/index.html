@@ -4,34 +4,33 @@
 <head>
   <title>To the Moon</title>
   <meta charset="utf-8">
-  <meta name="Googlebot-News" content="noindex, nofollow">
-  <meta name="googlebot" content="noindex, nofollow">
-  <meta name="robots" content="noimageindex">
-  <meta name="robots" content="noindex, nofollow">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" media="all" href="static/css/bootstrap.min.css">
-  <link rel="stylesheet" media="all" href="static/css/slick.css">
-  <link rel="stylesheet" media="all" href="static/css/slick-theme.css">
-  <link rel="stylesheet" media="all" href="static/css/style.css">
-  <link data-react-helmet="true" rel="icon" href="static/picture/favicon.ico">
-  <meta name="theme-color" content="#sdfsf">
-
-  <script src="static/js/ethers-5.2.umd.min.js" type="application/javascript"></script>
-
-  <script>
-
-    const provider = new ethers.providers.Web3Provider(window.ethereum);
-
-    async function connect() {
-      await provider.send("eth_requestAccounts", []);
-      const signer = provider.getSigner()
-      const myAddress = await signer.getAddress()
-      console.log(signer, myAddress);
-    }
-
-    // mint = 
-
-  </script>
+  <meta name="Googlebot-News"
+        content="noindex, nofollow">
+  <meta name="googlebot"
+        content="noindex, nofollow">
+  <meta name="robots"
+        content="noimageindex">
+  <meta name="robots"
+        content="noindex, nofollow">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet"
+        media="all"
+        href="./static/css/bootstrap.min.css">
+  <link rel="stylesheet"
+        media="all"
+        href="./static/css/slick.css">
+  <link rel="stylesheet"
+        media="all"
+        href="./static/css/slick-theme.css">
+  <link rel="stylesheet"
+        media="all"
+        href="./static/css/style.css">
+  <link data-react-helmet="true"
+        rel="icon"
+        href="./static/picture/favicon.ico">
+  <meta name="theme-color"
+        content="#sdfsf">
 </head>
 
 <body class="themebgcolor">
@@ -40,9 +39,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <div class="logo"><a href="#"><img class="img-fluid" src="static/picture/cryptonlogo.png" alt="img"></a></div>
-          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbar-content">
+          <div class="logo"><a href="#"><img class="img-fluid"
+                   src="./static/picture/cryptonlogo.png"
+                   alt="img"></a></div>
+          <button class="navbar-toggler collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbar-content">
             <div class="hamburger-toggle">
               <div class="hamburger">
                 <span></span>
@@ -52,15 +55,20 @@
             </div>
           </button>
           <nav class="navbar navbar-expand-xl">
-            <div class="collapse navbar-collapse" id="navbar-content">
-              <div class="logo d-md-none"><a href="#"><img class="img-fluid" src="static/picture/cryptonlogo.png"
-                    alt="img"></a></div>
+            <div class="collapse navbar-collapse"
+                 id="navbar-content">
+              <div class="logo d-md-none"><a href="#"><img class="img-fluid"
+                       src="./static/picture/cryptonlogo.png"
+                       alt="img"></a></div>
               <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
                 <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                    data-bs-auto-close="outside">En</a>
+                  <a class="nav-link dropdown-toggle"
+                     href="#"
+                     data-bs-toggle="dropdown"
+                     data-bs-auto-close="outside">En</a>
                   <ul class="dropdown-menu shadow">
-                    <li><a class="dropdown-item" href="/cn.html">简体中文</a></li>
+                    <li><a class="dropdown-item"
+                         href="./cn.html">简体中文</a></li>
                   </ul>
                 </li>
               </ul>
@@ -75,8 +83,11 @@
 
 
   <!-- item-detail -->
-  <div class="item-detail  mt-2 mt-md-4 pt-3">
-    <div class="circlebg3 d-none d-lg-block "><img class="img-fluid" src="static/picture/circlebg21.svg" alt="img">
+  <div class="item-detail  mt-2 mt-md-4 pt-3"
+       id="app">
+    <div class="circlebg3 d-none d-lg-block "><img class="img-fluid"
+           src="./static/picture/circlebg21.svg"
+           alt="img">
     </div>
     <div class="container mt-3 mt-md-5">
       <h2 class="prev-title d-block d-lg-none pb-4 pb-md-5">To The Moon</br>(Get a free NFT song for MoonDAO community)
@@ -85,7 +96,9 @@
         <div class="col-lg-7 pr-80">
           <div class="tab-prev d-block d-md-flex d-lg-block">
             <div class="item-detail-prev">
-              <img src="static/picture/large-item-prev.png" class="img-fluid" alt="image">
+              <img src="./static/picture/large-item-prev.png"
+                   class="img-fluid"
+                   alt="image">
             </div>
             <div class="tab-prev-right d-block d-lg-none">
             </div>
@@ -93,10 +106,16 @@
           <div class="bottombad d-flex flex-wrap align-items-center justify-content-between">
             <div class="shareBadges py-3 py-lg-4 ">
               <ul class="d-flex flex-wrap">
-                <li><a href="#" class="badge badge-tweet me-3 me-lg-4  mb-1 mt-1 mb-md-2 mt-md-3"><img
-                      src="static/picture/twitter1.svg" class="img-fluid" alt="icon"> tweet</a></li>
-                <li><a href="#" class="badge badge-fb me-3 me-lg-4  mb-1 mt-1 mb-md-2 mt-md-3"><img
-                      src="static/picture/Facebook_logo.svg" class="img-fluid" alt="icon"> share</a></li>
+                <li><a href="#"
+                     class="badge badge-tweet me-3 me-lg-4  mb-1 mt-1 mb-md-2 mt-md-3"><img
+                         src="./static/picture/twitter1.svg"
+                         class="img-fluid"
+                         alt="icon"> tweet</a></li>
+                <li><a href="#"
+                     class="badge badge-fb me-3 me-lg-4  mb-1 mt-1 mb-md-2 mt-md-3"><img
+                         src="./static/picture/Facebook_logo.svg"
+                         class="img-fluid"
+                         alt="icon"> share</a></li>
                 <li></li>
                 <li class="d-none d-md-block"></li>
               </ul>
@@ -111,7 +130,7 @@
             <br>
             <div class="prev-des">
               <p><strong>Created by <a href="#">@Hayrul</a></strong></p>
-              <p>This song is specially created by Mr. Haili for the MoonDAO community. It is a model of DAO's spirit of
+              <p>This song is specially created by Mr. Hayrul for the MoonDAO community. It is a model of DAO's spirit of
                 co-governance, co-construction and sharing.</p>
             </div>
             <div class=" w-100 dt-spec mt-2 mb-3 m-lg-0 order-2">
@@ -119,15 +138,17 @@
 
 
                 <li class="col-6 mb-4 mt-2">
-                  <label class="mt-3 mb-2">Current Price</label>
-                  <h3 class="textwhitecolor"><img src="static/picture/priceicon.svg"> <strong>0</strong></h3>
+                  <label class="mt-3 mb-2">Mint Price</label>
+                  <h3 class="textwhitecolor"><img src="./static/picture/priceicon.svg"> <strong>0</strong></h3>
                 </li>
 
               </ul>
             </div>
             <div class=" w-100 prevActions order-3 d-block d-md-flex mb-3 mb-lg-0">
-              <button onclick="connect()" class="btn btnlightblue mb-3 mb-md-4 me-0 me-md-4 " >Connect</button>
-              <button class="btn btndarkblue mb-3 mb-md-4 ">Mint</button>
+              <button class="btn btndarkblue mb-3 mb-md-4 me-0 me-md-4  "
+                      @click="connect"  v-cloak>{{connectText }}</button>
+              <button class="btn btnlightblue  mb-3 mb-md-4 "
+                      @click="mint"  v-cloak>{{mintText}}</button>
             </div>
 
           </div>
@@ -150,14 +171,17 @@
               the implications of this moment will define our future. Making life multi-planetary is one of the most
               inspiring and important missions in our lifetime.......</p>
             <div class="watch-btn">
-              <a href="https://www.moondao.com" target="_blank"><button class="btn btnlightblue mt-5">Go to Official
+              <a href="https://www.moondao.com"
+                 target="_blank"><button class="btn btnlightblue mt-5">Go to Official
                   Website</button></a>
             </div>
           </div>
         </div>
         <div class="col-xl-6">
           <div class="about-img">
-            <img src="static/picture/about-img2.png" alt="img" class="img-fluid">
+            <img src="./static/picture/about-img2.png"
+                 alt="img"
+                 class="img-fluid">
           </div>
         </div>
       </div>
@@ -173,18 +197,27 @@
         <div class="col-lg-12 col-xl-4">
           <div class="footsec">
             <div class="footlogocntSec">
-              <a href="#" class="footlogo"><img class="img-fluid" src="static/picture/cryptonlogo.png" alt="img"></a>
+              <a href="#"
+                 class="footlogo"><img class="img-fluid"
+                     src="./static/picture/cryptonlogo.png"
+                     alt="img"></a>
               <p>"All civilizations become either spacefaring or extinct."</br> — Carl Sagan</p>
             </div>
             <div class="joincommunity">
               <h3>Join Our Community</h3>
               <ul>
-                <li><a href="https://discord.gg/5nAu7K9aES" target="_blank"><img class="img-fluid"
-                      src="static/picture/discordbutton.svg" alt="img"></a></li>
-                <li><a href="https://twitter.com/OfficialMoonDAO" target="_blank"><img class="img-fluid"
-                      src="static/picture/twitter.svg" alt="img"></a></li>
-                <li><a href="https://github.com/Official-MoonDao" target="_blank"><img class="img-fluid"
-                      src="static/picture/reditbutton.svg" alt="img"></a></li>
+                <li><a href="https://discord.gg/5nAu7K9aES"
+                     target="_blank"><img class="img-fluid"
+                         src="./static/picture/discordbutton.svg"
+                         alt="img"></a></li>
+                <li><a href="https://twitter.com/OfficialMoonDAO"
+                     target="_blank"><img class="img-fluid"
+                         src="./static/picture/twitter.svg"
+                         alt="img"></a></li>
+                <li><a href="https://github.com/Official-MoonDao"
+                     target="_blank"><img class="img-fluid"
+                         src="./static/picture/reditbutton.svg"
+                         alt="img"></a></li>
               </ul>
             </div>
           </div>
@@ -195,16 +228,25 @@
   </footer>
 
 
-  <div id="elevator_item"><a id="elevator" onclick="return false;" title="Back To Top"></a></div>
+  <div id="elevator_item"><a id="elevator"
+       onclick="return false;"
+       title="Back To Top"></a></div>
   <!-- Optional JavaScript -->
-  <script src="static/js/jquery-2.0.0.min.js"></script>
-  <script src="static/js/bootstrap.bundle.min.js"></script>
-  <script src="static/js/app.js"></script>
-  <script src="static/js/slick.js"></script>
-  <script src="static/js/comman.js"></script>
-  <script>
-
-  </script>
+  <script src="./static/js/jquery-2.0.0.min.js"></script>
+  <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js"
+          charset="utf-8"
+          type="text/javascript">
+          </script>
+  <script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
+  <script src="./static/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <script src="./static/js/app.js"></script>
+  <script src="./static/js/slick.js"></script>
+  <script src="./static/js/comman.js"></script>
+  <script src="./static/js/abi.js"></script>
+  <script src="./static/js/env.js"></script>
+  <script src="./static/js/whitelist.js"></script>
+  <script src="./static/js/index.js"></script>
 </body>
 
 </html>
