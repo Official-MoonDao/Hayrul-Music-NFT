@@ -1,4 +1,4 @@
-var __ABI = [
+const __ABI = [
     {
         "inputs": [
             {
