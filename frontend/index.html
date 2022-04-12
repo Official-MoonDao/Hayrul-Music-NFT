@@ -1,68 +1,105 @@
-﻿<!doctype html>
+﻿<!DOCTYPE html>
 <html class="no-js"
-	  lang="en">
+      lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="x-ua-compatible"
-		  content="ie=edge">
-	<title>To the Moon</title>
-	<meta name="viewport"
-		  content="width=device-width, initial-scale=1">
-	<!-- all css here -->
-	<link data-react-helmet="true"
-		  rel="icon"
-		  href="./assets/images/icon/favicon.ico">
-	<link rel="stylesheet"
-		  href="./assets/css/bootstrap.min.css">
-	<link rel="stylesheet"
-		  href="./assets/css/font-awesome.min.css">
-	<link rel="stylesheet"
-		  href="./assets/css/magnific-popup.css">
-	<link rel="stylesheet"
-		  href="./assets/css/slicknav.min.css">
-	<link rel="stylesheet"
-		  href="./assets/css/swiper.min.css">
-	<link rel="stylesheet"
-		  href="./assets/css/zoomslider.css">
-	<link rel="stylesheet"
-		  href="./assets/css/typography.css">
-	<link rel="stylesheet"
-		  href="./assets/css/default-css.css">
-	<link rel="stylesheet"
-		  href="./assets/css/styles.css">
-	<link rel="stylesheet"
-		  href="./assets/css/responsive.css">
-	<!-- modernizr css -->
-	<script src="./assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible"
+        content="ie=edge" />
+  <title>To the Moon</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1" />
+  <!-- all css here -->
+  <link data-react-helmet="true"
+        rel="icon"
+        href="./assets/images/icon/favicon.ico" />
+  <link rel="stylesheet"
+        href="./assets/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+        href="./assets/css/font-awesome.min.css" />
+  <link rel="stylesheet"
+        href="./assets/css/magnific-popup.css" />
+  <link rel="stylesheet"
+        href="./assets/css/slicknav.min.css" />
+  <link rel="stylesheet"
+        href="./assets/css/swiper.min.css" />
+  <link rel="stylesheet"
+        href="./assets/css/zoomslider.css" />
+  <link rel="stylesheet"
+        href="./assets/css/typography.css" />
+  <link rel="stylesheet"
+        href="./assets/css/default-css.css" />
+  <link rel="stylesheet"
+        href="./assets/css/styles.css" />
+  <link rel="stylesheet"
+        href="./assets/css/responsive.css" />
+  <!-- modernizr css -->
+  <script src="./assets/js/vendor/modernizr-2.8.3.min.js"></script>
+  <style>
+    .mint {
+      width: 200px;
+      margin: 0 auto;
+      display: block;
+      margin-top: 50px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 10px;
+    }
+
+    @media (min-width: 240px) and (max-width: 480px) {
+      .header-area {
+        padding-top: 0;
+      }
+    }
+
+    @media (min-width: 240px) and (max-width: 480px) {
+      .music-content h2 {
+        font-size: 30px;
+        line-height: 46px;
+      }
+    }
+
+    [v-cloak] {
+      display: none;
+    }
+
+  </style>
 </head>
 
 <body>
-
-	<!--[if lt IE 8]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
-	<!-- preloader area start -->
-	<!---<div id="preloader">
+  <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
+  <!-- preloader area start -->
+  <!---<div id="preloader">
 	<div class="loader"></div>
 </div>--->
-	<!-- prealoader area end -->
-	<!-- header area start -->
+  <!-- prealoader area end -->
+  <!-- header area start -->
 
-	<header>
-		<div class="header-area">
-			<div class="container">
-				<div class="row align-items-center nav">
-					<div>
-						<div class="logo">
-							<a href="index.html">
-								<img src="./assets/images/icon/cryptonlogo.png"
-									 alt="logo">
-							</a>
-
-						</div>
-					</div>
-					<!-- <div class="col-lg-7 d-none d-lg-block col-sm-2">
+  <header>
+    <div class="header-area">
+      <div class="container">
+        <div class="row align-items-center nav">
+          <div>
+            <div class="logo">
+              <a href="https://moondao.com/"
+                 target="_blank">
+                <img src="https://moondao.com/img/Original_White.png"
+                     style="max-width: none"
+                     width="160"
+                     alt="logo" />
+              </a>
+            </div>
+          </div>
+          <!-- <div class="col-lg-7 d-none d-lg-block col-sm-2">
 					<div class="main-menu">
 						<nav id="nav_mobile_menu">
 							<ul id="navigation">
@@ -80,151 +117,169 @@
 						</nav>
 					</div>
 				</div> -->
-					<!-- <div class="col-12 d-block d-lg-none">
+          <!-- <div class="col-12 d-block d-lg-none">
 					<div id="mobile_menu"></div>
 				</div> -->
-					<div id="connect-app">
-						<div class="btn-plain"
-							 id="btn-connect"
-							 @click="connect"
-							 v-cloak>{{connectText}}</div>
-					</div>
+          <div id="connect-app">
+            <div class="btn-plain"
+                 id="btn-connect"
+                 @click="connect"
+                 v-cloak>
+              {{connectText}}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- header area end -->
+  <!-- slider area start -->
 
-				</div>
-			</div>
-		</div>
-	</header>
-	<!-- header area end -->
-	<!-- slider area start -->
+  <div class="slider-area d-flex align-items-center"
+       id="slider_firefly"
+       data-zs-interval="6000"
+       data-zs-speed="6000"
+       data-zs-src='["./assets/images/slider/hayrul-bg-6.jpeg","./assets/images/slider/hayrul-bg-5.jpeg", "./assets/images/slider/hayrul-bg-2.jpeg","./assets/images/slider/hayrul-bg-7.jpeg", "./assets/images/slider/hayrul-bg-8.jpeg"]'>
+    <div class="container">
+      <div class="music-content"
+           id="mint-app">
+        <h2>
+          MOONDAO & HAYRUL <br />
+          # TO THE MOON <br />
+          MINT FOR FREE
+        </h2>
+        <a href="https://hayrul-nft.s3.amazonaws.com/Hayrul-Tothemoon.mp4"
+           class="expand-video">
+          <i class="fa fa-play"></i>
+        </a>
+        <div class="btn-primary mint"
+             @click="mint"
+             v-cloak>{{mintText}}</div>
+      </div>
+    </div>
+  </div>
 
-	<div class="slider-area d-flex align-items-center"
-		 id="slider_firefly"
-		 data-zs-src='["./assets/images/slider/music-bg1.jpg", "./assets/images/slider/music-bg2.jpg", "./assets/images/slider/music-bg3.jpg"]'>
-		<div class="container">
-			<div class="music-content"
-				 id="mint-app">
-				<h2>#TO THE MOON
-					<br> MINT FOR FREE
-				</h2>
-				<a href="https://hayrul-nft.s3.amazonaws.com/Hayrul-Tothemoon.mp4"
-				   class="expand-video">
-					<i class="fa fa-play"></i>
-				</a>
-				<div class="btn-primary mint"
-					 @click="mint"
-					 v-cloak>{{mintText}}</div>
-			</div>
-		</div>
-	</div>
+  <!-- slider area end -->
+  <!-- abt-music area start -->
+  <section class="abt-music-area"
+           style="
+        background: url(./assets/images/slider/hayrul-bg-1.jpeg) center/cover
+          no-repeat;
+      "
+           id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6">
+          <div class="abt-msc-content">
+            <h2>About HAYRUL</h2>
+            <h4>A Different Kind of music</h4>
+            <p>
+              Music genres: Boom bap and Jazz hiphop. Music style of Hayrul is
+              mainly characterized by his sense of exotic and mixed clips of
+              various folk muscial instruments.Good at absorbing a variety of
+              music works with rich connotations, and with on-site
+              explosiveness, strong infectiousness.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5 offset-lg-1">
+          <div class="msc-abt-right">
+            <ul>
+              <li>An independent musician from Yining, Xinjiang</li>
+              <li>Owner-Principal of Night Harbor.</li>
+              <li>
+                Founder of the young and promising record label "Horse King"
+              </li>
+              <li>
+                100k+ fans in NetEase Music, nearly 100 million plays in
+                total.
+              </li>
+              <li>
+                So far, there are 25 songs with 999+ comments in NetEase
+                Music.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- abt-music area end -->
+  <!-- upcooming-events area start -->
+  <section class="upcooming-events bg_dark ptb--100"
+           id="event">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 offset-md-1">
+          <div class="upv-content">
+            <h2>MoonDao</h2>
+            <h3>Space should be in the hands of the people.</h3>
+            <h4>
+              We are sending MoonDAO members
+              <span>to space!</span>
+            </h4>
+            <p>We've signed the contract with Blue Origin.</p>
+            <a target="_blank"
+               href="https://moondao.com/">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- upcooming-events area end -->
 
-	<!-- slider area end -->
-	<!-- abt-music area start -->
-	<section class="abt-music-area"
-			 id="about">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-lg-6">
-					<div class="abt-msc-content">
-						<h2>About HAYRUL</h2>
-						<h4>A Different Kind of music</h4>
-						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam animi ea quia, fugiat,
-							in dolore
-							ut vel ipsam laborum doloremque consectetur unde nam quibusdam saepe praesentium
-							necessitatibus
-							inventore ullam distinctio?</p>
-					</div>
-				</div>
-				<div class="col-lg-5 offset-lg-1">
-					<div class="msc-abt-right">
-						<ul>
-							<li>Lorem ipsum dolor sit amet.</li>
-							<li>consectetur adipisicing elit.</li>
-							<li> Sint dolorem minus molestiae.</li>
-							<li>assumenda minima illo cum nisi facilis</li>
-							<li>sint repudiandae consequatur odit dolorum</li>
-							<li>squos sit voluptate? Enim, repudiandae.</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- abt-music area end -->
-	<!-- upcooming-events area start -->
-	<section class="upcooming-events bg_dark ptb--100"
-			 id="event">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-10 offset-md-1">
-					<div class="upv-content">
-						<h2>MoonDao</h2>
-						<h3>Space should be in the hands of the people.</h3>
-						<h4>We are sending MoonDAO members
-							<span>to space!</span>
-						</h4>
-						<p>We've signed the contract with Blue Origin.</p>
-						<a target="_blank"
-						   href="https://moondao.com/">Read More</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- upcooming-events area end -->
+  <!-- footer area start -->
+  <div class="footer-area ptb--50">
+    <div class="container">
+      <div class="footer-content">
+        <p>Copyright &copy; 2022.MoonDAO</p>
+        <ul>
+          <li style="margin-top: 10px">
+            <a href="https://discord.gg/5nAu7K9aES"
+               target="_blank"><img class="img-fluid"
+                   src="./assets/images/icon/discordbutton.svg"
+                   alt="img" /></a>
+          </li>
+          <li style="margin-top: 10px">
+            <a href="https://twitter.com/OfficialMoonDAO"
+               target="_blank"><img class="img-fluid"
+                   src="./assets/images/icon/twitter.svg"
+                   alt="img" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- footer area end -->
 
-
-
-	<!-- footer area start -->
-	<div class="footer-area ptb--50">
-		<div class="container">
-			<div class="footer-content">
-				<p>Copyright &copy; 2022.MoonDAO</p>
-				<ul>
-					<li style="margin-top: 10px;"><a href="https://discord.gg/5nAu7K9aES"
-						   target="_blank"><img class="img-fluid"
-								 src="./assets/images/icon/discordbutton.svg"
-								 alt="img"></a></li>
-					<li style="margin-top: 10px;"><a href="https://twitter.com/OfficialMoonDAO"
-						   target="_blank"><img class="img-fluid"
-								 src="./assets/images/icon/twitter.svg"
-								 alt="img"></a></li>
-
-				</ul>
-			</div>
-
-		</div>
-	</div>
-	<!-- footer area end -->
-
-	<!-- jquery latest version -->
-	<script src="./assets/js/vendor/jquery-2.2.4.min.js"></script>
-	<!-- bootstrap 4 js -->
-	<script src="./assets/js/bootstrap.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-	<!-- others plugins -->
-	<script src="./assets/js/jquery.slicknav.min.js"></script>
-	<script src="./assets/js/counterup.min.js"></script>
-	<script src="./assets/js/waypoints.js"></script>
-	<script src="./assets/js/imagesloaded.pkgd.min.js"></script>
-	<script src="./assets/js/isotope.pkgd.min.js"></script>
-	<script src="./assets/js/jquery.magnific-popup.min.js"></script>
-	<script src="./assets/js/countdown.js"></script>
-	<script src="./assets/js/swiper.min.js"></script>
-	<script src="./assets/js/plugins.js"></script>
-	<script src="./assets/js/jquery.zoomslider.min.js"></script>
-	<script src="./assets/js/jquery.firefly.js"></script>
-	<script src="https://cdn.ethers.io/scripts/ethers-v4.min.js"
-			charset="utf-8"
-			type="text/javascript">
-			</script>
-	<script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
-	<script src="./assets/js/abi.js"></script>
-	<script src="./assets/js/env.js"></script>
-	<script src="./assets/js/whitelist.js"></script>
-	<!-- google map -->
-	<!---<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO_5h890WNShs_YLGivCBfs2U89qXR-7Y&callback=initMap"></script>--->
-	<script src="./assets/js/scripts.js"></script>
-	<script src="./assets/js/index.js"></script>
+  <!-- jquery latest version -->
+  <script src="./assets/js/vendor/jquery-2.2.4.min.js"></script>
+  <!-- bootstrap 4 js -->
+  <script src="./assets/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <!-- others plugins -->
+  <script src="./assets/js/jquery.slicknav.min.js"></script>
+  <script src="./assets/js/counterup.min.js"></script>
+  <script src="./assets/js/waypoints.js"></script>
+  <script src="./assets/js/imagesloaded.pkgd.min.js"></script>
+  <script src="./assets/js/isotope.pkgd.min.js"></script>
+  <script src="./assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="./assets/js/countdown.js"></script>
+  <script src="./assets/js/swiper.min.js"></script>
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/jquery.zoomslider.min.js"></script>
+  <script src="./assets/js/jquery.firefly.js"></script>
+  <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js"
+          charset="utf-8"
+          type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
+  <script src="./assets/js/abi.js"></script>
+  <script src="./assets/js/env.js"></script>
+  <script src="./assets/js/whitelist.js"></script>
+  <!-- google map -->
+  <!---<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO_5h890WNShs_YLGivCBfs2U89qXR-7Y&callback=initMap"></script>--->
+  <script src="./assets/js/scripts.js"></script>
+  <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

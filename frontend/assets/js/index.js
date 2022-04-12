@@ -11,10 +11,7 @@ var mintApp = new Vue({
 
     },
     mounted() {
-        if (!window.ethereum) {
-            alert('Error environment!')
-            return
-        }
+
         window.ethereum.on('accountsChanged', () => {
             window.location.reload()
         })
