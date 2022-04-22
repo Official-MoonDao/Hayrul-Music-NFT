@@ -38,10 +38,10 @@ contract TTM is ERC1155, Ownable {
     {
         if (claimed[msg.sender] == true) revert AlreadyClaimed();
         if (restUnMint == 0) revert NoRestUnMint();
-        claimed[msg.sender] = true;
-        restUnMint--;
         require(MerkleProof.verify(merkleProof, merkleRoot, keccak256(abi.encodePacked(msg.sender))), "invalid merkle proof");
         _mint(msg.sender,0, 1, "");
+        claimed[msg.sender] = true;
+        restUnMint--;
     }
     
     //We reserve 10 nfts for multisig, if someone did not mint for a long time, the multi-signature could mint all the remaining nfts
