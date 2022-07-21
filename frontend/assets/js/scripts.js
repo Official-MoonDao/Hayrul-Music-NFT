@@ -310,12 +310,12 @@
     });
 
     $('.expand-video').magnificPopup({
-		disableOn: 700,
-		type: 'iframe',
-		mainClass: 'mfp-fade',
-		removalDelay: 160,
-		preloader: false,
-		fixedContentPos: false
+        disableOn: 700,
+        type: 'iframe',
+        mainClass: 'mfp-fade',
+        removalDelay: 160,
+        preloader: false,
+        fixedContentPos: false
     });
 
     /*================================
@@ -622,3 +622,4 @@ function initMap() {
         map: map
     });
 }
+
