@@ -56,19 +56,7 @@
 </head>
 
 <body>
-  <!--[if lt IE 8]>
-      <p class="browserupgrade">
-        You are using an <strong>outdated</strong> browser. Please
-        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
-        your experience.
-      </p>
-    <![endif]-->
-  <!-- preloader area start -->
-  <!---<div id="preloader">
-	<div class="loader"></div>
-</div>--->
-  <!-- prealoader area end -->
-  <!-- header area start -->
+
 
   <header>
     <div class="header-area">
@@ -81,27 +69,7 @@
               </a>
             </div>
           </div>
-          <!-- <div class="col-lg-7 d-none d-lg-block col-sm-2">
-					<div class="main-menu">
-						<nav id="nav_mobile_menu">
-							<ul id="navigation">
-								<li class="active">
-									<a href="#slider_firefly">Mint</a>
-								</li>
-								<li>
-									<a href="#about">Hayrul</a>
-								</li>
-								<li>
-									<a href="#event">MoonDAO</a>
-								</li>
 
-							</ul>
-						</nav>
-					</div>
-				</div> -->
-          <!-- <div class="col-12 d-block d-lg-none">
-					<div id="mobile_menu"></div>
-				</div> -->
           <div id="connect-app">
             <div class="btn-plain" id="btn-connect" @click="connect" v-cloak>
               {{connectText}}
@@ -117,7 +85,7 @@
   <div class="slider-area d-flex align-items-center" id="slider_firefly" data-zs-interval="6000" data-zs-speed="6000"
     data-zs-src='["./assets/images/slider/bg2.jpg","./assets/images/slider/bg3.jpg","./assets/images/slider/bg5.jpg"]'>
     <div class="container">
-      <div class="music-content" id="mint-app" >
+      <div class="music-content" id="mint-app">
         <h2 style="text-shadow: 3px 3px #000000;">
           MOONDAO & HAYRUL <br />
           # TO THE MOON <br />
@@ -126,7 +94,8 @@
         <!-- <a href="https://hayrul-nft.s3.amazonaws.com/Hayrul-Tothemoon.mp4" class="expand-video">
           <i class="fa fa-play"></i>
         </a> -->
-        <div class="btn-primary mint" :class="{loading: loading}" @click="mint" v-cloak style="text-shadow: 2px 2px #000000;">{{mintText}}</div>
+        <div class="btn-primary mint" :class="{loading: loading}" @click="mint" v-cloak
+          style="text-shadow: 2px 2px #000000;">{{mintText}}</div>
       </div>
     </div>
   </div>
@@ -311,7 +280,8 @@
   <script src="./assets/js/vendor/jquery-2.2.4.min.js"></script>
   <!-- bootstrap 4 js -->
   <script src="./assets/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
   <!-- others plugins -->
   <script src="./assets/js/jquery.slicknav.min.js"></script>
   <script src="./assets/js/counterup.min.js"></script>
@@ -324,11 +294,10 @@
   <script src="./assets/js/plugins.js"></script>
   <script src="./assets/js/jquery.zoomslider.min.js"></script>
   <script src="./assets/js/jquery.firefly.js"></script>
-  <script src="https://cdn.ethers.io/scripts/ethers-v4.min.js" charset="utf-8" type="text/javascript"></script>
+  <script src="https://cdn.ethers.io/lib/ethers-5.2.umd.min.js" charset="utf-8" type="text/javascript"></script>
   <script src="https://cdn.jsdelivr.net/npm/merkletreejs@latest/merkletree.js"></script>
   <script src="./assets/js/abi.js"></script>
   <script src="./assets/js/config.js"></script>
-  <script src="./assets/js/whitelist.js"></script>
   <!-- google map -->
   <!---<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBO_5h890WNShs_YLGivCBfs2U89qXR-7Y&callback=initMap"></script>--->
   <script src="./assets/js/scripts.js"></script>
@@ -349,6 +318,9 @@
         // Attributes
       }
     );
+
+
+
   </script>
 </body>
 
